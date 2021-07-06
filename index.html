@@ -14,11 +14,30 @@
 </head>
 
 
-<body>
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+
+<body class="debug">
   <header class="container-fluid sticky-top p-0">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Timothy Kimble</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
           aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -27,35 +46,17 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home
+              <a class="nav-link active" href="#about">About Me
                 <span class="visually-hidden">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                aria-expanded="false">Dropdown</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-              </div>
+              <a class="nav-link" href="#message">Message Me</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
@@ -65,30 +66,83 @@
 
   <main class="container-fluid">
     <!-- NOTE About Me -->
-    <div class="row d-flex align-items-center">
-      <div class="col-md-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat aliquid sint recusandae
-        non, facere nostrum obcaecati neque ipsam voluptates, debitis vel, officia adipisci. Cum tenetur itaque quas
-        harum, est illo.</div>
-      <div class="col-md-6">
-        <img title="Timothy Kimble" src="Assets/me.jpg" alt="Timothy Kimble">
+    <div class="row d-flex align-items-center mt-5 justify-content-center margintopbot " id="about">
+      <div class="col-md-6 d-flex justify-content-center">
+        <h3 class="w-75 pb-3 pt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Fugiat aliquid sint recusandae
+          non, facere nostrum obcaecati neque ipsam voluptates, debitis vel, officia adipisci. Cum tenetur itaque quas
+          harum, est illo.</h3>
+      </div>
+      <div class="col-md-4 d-flex align-items-center justify-content-center pt-3 pb-3">
+        <img title="Timothy Kimble" src="Assets/me.jpg" alt="Timothy Kimble" width="309px" height="412px">
       </div>
     </div>
 
     <!-- NOTE Experience/Projects-->
-    <div class="row"></div>
-
-    <!-- NOTE Social Links -->
-    <div class="row"></div>
+    <div class="row d-flex align-items-center mt-5 justify-content-center margintopbot" id="projects">
+      <div class="col-md-4 d-flex align-items-center justify-content-center pt-3 pb-3">
+        <img title="Timothy Kimble" src="Assets/me.jpg" alt="Timothy Kimble" width="309px" height="412px">
+      </div>
+      <div class="col-md-6 d-flex justify-content-center">
+        <h3 class="w-75 pb-3 pt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Fugiat aliquid sint recusandae
+          non, facere nostrum obcaecati neque ipsam voluptates, debitis vel, officia adipisci. Cum tenetur itaque quas
+          harum, est illo.</h3>
+      </div>
+    </div>
 
     <!-- NOTE Send Me a Message Form -->
-    <div class="row"></div>
+    <div class="row d-flex align-items-center mt-5 justify-content-center margintopbot" id="message">
+      <div class="col-md-6 d-flex justify-content-center ">
+        <form action="mailto:Timble417@gmail.com" method="post" enctype="text/plain">
+          <input class="mt-1 mb-1 border-radius" placeholder="Name" type="text" name="Name">
+          <div>
+            <input class="mt-1 mb-1 border-radius" type="email" name="email" id="email" placeholder="Email">
+          </div>
+          <div>
+            <input class="mt-1 mb-1 border-radius" placeholder="Phone" type="tel" id="phone" name="phone">
+            <input class="mt-1 mb-1 border-radius" placeholder="EXT." type="text" name="EXT.">
+          </div>
+          <textarea class=" mt-1 mb-1 w-100 border-radius" name="Message" id="" placeholder="Message Me"></textarea>
+          <button class="btn btn-info">Submit</button>
+        </form>
+
+      </div>
+      <div class="col-md-4 d-flex align-items-center justify-content-center pt-3 pb-3">
+        <img title="Timothy Kimble" src="Assets/me.jpg" alt="Timothy Kimble" width="309px" height="412px">
+      </div>
+    </div>
 
 
   </main>
 
 
   <!-- NOTE Social Media Links and Contact Info -->
-  <footer class="container-fluid"></footer>
+  <footer class="container-fluid mt-5  ">
+    <div class="row d-flex justify-content-around">
+      <div class="col-md-3">
+        <h5 class="m-0 pb-1">Timothy Kimble</h5>
+        <p class="m-0 pb-1">Phone: (986) 666-9209</p>
+        <p class="m-0 pb-1">Email: Timble417@gmail.com</p>
+      </div>
+      <div class="col-md-2 d-flex align-items-center justify-content-center justify-content-around">
+        <div class="">
+          <a href="https://github.com/TimothyKimble"><i class="fab fa-github fa-3x "></i></a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/timothykimble/"><i class="fab fa-linkedin fa-3x "></i></a>
+        </div>
+      </div>
+      <div class="col-md-3">
+
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="app.js"></script>
+  <script src="https://kit.fontawesome.com/eb06e1df07.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </body>
 
 
