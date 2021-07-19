@@ -17,11 +17,11 @@ I would love to have you follow me on my journey to becoming a software develope
 
 ### More About Me
 
- 🎮 &nbsp; I enjoy video games, especially First Person Shooters, MOBA's, and Survival games
- 🃏 &nbsp; Recently got into Magic the Gathering and love board games
- 🧙‍♂️ &nbsp; Homebrew Dungeon Master and Sorcerer 
- 👨‍🍳 &nbsp; Aspiring Cook and Baker
- 🎷&nbsp; Play multiple instruments including Saxophone, Piano, and Singing Tenor
+ 🎮 &nbsp; I enjoy video games, especially First Person Shooters, MOBA's, and Survival games <br>
+ 🃏 &nbsp; Recently got into Magic the Gathering and love board games <br>
+ 🧙‍♂️ &nbsp; Homebrew Dungeon Master and Sorcerer <br>
+ 👨‍🍳 &nbsp; Aspiring Cook and Baker <br>
+ 🎷&nbsp; Play multiple instruments including Saxophone, Piano, and Singing Tenor <br>
 
 "I can't carry it for you, but I can carry you."
  <br> Samwise Gamgee <br>
