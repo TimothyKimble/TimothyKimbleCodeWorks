@@ -22,6 +22,7 @@ I would love to have you follow me on my journey to becoming a software develope
  🧙‍♂️ &nbsp; Homebrew Dungeon Master and Sorcerer <br>
  👨‍🍳 &nbsp; Aspiring Cook and Baker <br>
  🎷&nbsp; Play multiple instruments including Saxophone, Piano, and Singing Tenor <br>
+ 💑 &nbsp; Enjoy spending time with my wife <br>
 
 "I can't carry it for you, but I can carry you."
  <br> Samwise Gamgee <br>
